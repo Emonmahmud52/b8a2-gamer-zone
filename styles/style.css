@@ -1,0 +1,98 @@
+/* Work Sans Google font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700;800&family=Poppins:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+/* Common Shared Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Header related styles */
+header {
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 20px 100px;
+}
+
+/* nav related styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    color: #0B0223;
+}
+
+.logo-title span {
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu ul {
+    display: flex;
+    gap: 30px;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu li :hover {
+    background-color: gray;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 10px 15px;
+}
+
+.menu li .fa-brands{
+    color: #F61C0D;
+    font-size: 20px;
+}
+.menu li>a {
+    text-decoration: none;
+    color: #3C354F;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* Responsive for mobile device */
+
+@media screen and (max-width: 576px) {
+    nav{
+        flex-direction: column;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+}
+
+/* Responsive for Tablet device */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+   header{
+    padding: 20px 45px;
+   }
+
+   .menu ul {
+    gap: 20px;
+}
+}
+
